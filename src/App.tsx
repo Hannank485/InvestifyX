@@ -52,7 +52,7 @@ function App() {
     }
   }, [dark]);
 
-  //CALCULATION FOR LOAN
+  //CALCULATION FOR Investment
   useEffect(() => {
     const amount: number = Math.round(
       principal * Math.pow(1 + Return / 100, tenure)
@@ -111,7 +111,7 @@ function App() {
             </div>
           </div>
           <div className="mt-6">
-            <p>Loan Tenure (Years)</p>
+            <p>Investment Tenure (Years)</p>
             <div className="relative">
               <MdDateRange className="absolute left-2 top-2.5  text-2xl dark:text-[#4d4d4d]" />
               <input
