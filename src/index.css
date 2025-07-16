@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+  font-family: Poppins, sans-serif;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+@theme {
+  --color-dark: #1e1e1e;
+  --color-carddark: #2b2b2b;
+  --color-primary: #efefef;
+  --color-darkSecondary: #3d3d3d;
+  --color-lightSecondary: #f0f0f0;
+  --color-light: #fdf6f0;
+}
+
+.inputfield {
+  @apply border-2 border-gray-300  bg-lightSecondary py-2 pl-10 pr-2 dark:bg-dark dark:border-darkSecondary w-full rounded-md;
+}
+
+.cardInfo {
+  @apply flex flex-col justify-center items-center w-full rounded-2xl bg-lightSecondary dark:bg-dark py-3 border-2 border-gray-300 dark:border-darkSecondary;
+}
